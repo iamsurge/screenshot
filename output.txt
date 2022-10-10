@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction: Joe Lee</title>
+    <!-- https://github.com/joeleeofficial/Joe-Portfolio -->
+    <meta name="description" content="Joe Lee's portfolio, Learn more about Chee Yong Lee">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a href="https://github.com/joeleeofficial">Joe Lee</a></h1>
+            <h2>A Full Stack Developer</h2>
+        </div>
+        <div class="nav">
+                <a class="navDiv" href="#about"><h2>About</h2></a>
+                <a class="navDiv" href="#projects"><h2>Projects</h2></a>
+                <a class="navDiv" href="mailto:tojoeleeofficial@gmail.com"><h2>Contact</h2></a>
+        </div>
+        <div class="info">
+            <img alt="avatar" src="/assets/joelee.png" class="avatar">
+            <div class="stats">
+            <h2>Name (formerly)</h2>
+            <span><a href="https://github.com/leecheeyong">Chee Yong Lee</a></span>
+            <h2>Age</h2>
+            <span><span class="age">14</span></span>
+            <h2>Social Medias</h2>
+            <span><a href="https://www.youtube.com/channel/UCexNfX9LMZtzuFepKzjt36g"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg></a><a class="icons" href="https://instagram.com/cheeyong_08"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1); "><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg></a></span>
+            <h2>Languages</h2>
+            <span>English, Mandarin, Malay</span>
+            <h2>Programming Languages</h2>
+            <span>HTML, CSS, JavaScript, Python</span>
+        </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h1>Featured Projects</h1>
+            <div class="project">
+                <h2><a href="https://github.com/BotStudios/ModmailBot">ModmailBot</a></h2><h3>A feature rich powerful discord.js modmail bot.</h3> 
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/CodingStudios/NewsPool">NewsPool</a></h2><h3>A node.js news article scraper, get the latest news.</h3> 
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/CodingStudios/CSlide">CSlide</a></h2><h3>An node module that allow developers to create a Slideshow swiftly.</h3> 
+            </div>
+            <div class="project">
+                <h2><a href="https://github.com/BotStudios/Shortem">Shortem</a></h2><h3>A discord.js bot for creating shorten urls.</h3> 
+            </div>
+            <div class="project">
+                <h2><a href="https://brawley.js.org">Jet Brawley</a></h2><h3>A Supercell Games Statistics Discord Bot</h3> 
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <h1>About Me</h1>
+            <p>Hi, I'm Joe, formerly Chee Yong Lee. I'm from Penang, Malaysia and currently studying in a high school. I'm a full stack developer and I'm currently developing and maintaining projects such as Discord Bots, websites, services and many more. I'm also managing both <a href="https://github.com/BotStudios">@BotStudios</a> &amp; <a href="https://github.com/CodingStudios">@CodingStudios</a> organizations. Programming is something I'll do during my free time and I'm familiar with Javascript (nodejs, DOM, some libraries), HTML, CSS and a little bit of Python. My main/favorite programming language is Javascript, its the language I'm using the most. I do play games as well when I'm bored with programming, and most of the time I'll be playing mobile games such as Clash Of Clans and Brawl Stars (fun fact: I own a club!), but the time I spend on games are way less than the time I spend on programming. </p>
+            <p>So basically this is all about me, I'm <span class="age">14</span> and I live in Malaysia, programming is my hobby, Javascript is my favorite language and studying in a High School.</p>
+        </div>
+        <div class="footer">
+            <p>Joe's Portfolio (v1) © Lee Chee Yong 2021 <span id="year"> - 2022</span></p>
+            <p>This project is available as open source under the terms of the <a href="https://github.com/joeleeofficial/Joe-Portfolio/LICENSE">GPL-3.0 License</a></p>
+        </div>
+       </div>
+
+<script>
+    var age = [...document.getElementsByClassName("age")];
+    age.forEach((e) => {
+        e.textContent = `${new Date().getFullYear() - 2008}`;
+    });
+    document.getElementById('year').textContent = ` - ${new Date().getFullYear()}`;
+
+
+    </script>
+
+</body></html>
