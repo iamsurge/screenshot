@@ -8,7 +8,7 @@ async function browser() {
  await sites.forEach(async (file) => {
     var page = await browser.newPage();
     await page.goto(`https://${file.slice(4)}`, {waitUntil: 'networkidle0'});
-    await page.screenshot({path: `./datas/${file}`, fullPage: true});
+    await page.screenshot({path: `../datas/${file}`, fullPage: true});
   })
     
     await browser.close();
