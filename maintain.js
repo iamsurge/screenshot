@@ -1,17 +1,15 @@
 const puppeteer = require('puppeteer');
 const { readFileSync, writeFileSync, readdirSync } = require("fs");
-const sites = readdirSync('../datas').filter(file => file.endsWith('.png'));
+const sites = readdirSync('./datas').filter(file => file.endsWith('.png'));
 
-async function browser() {
+    
+sites.forEach(async (file) => {
     const browser = await puppeteer.launch();
-    
- await sites.forEach(async (file) => {
-    var page = await browser.newPage();
+    const page = await browser.newPage();
     await page.goto(`https://${file.slice(4)}`, {waitUntil: 'networkidle0'});
-    await page.screenshot({path: `../datas/${file}`, fullPage: true});
-  })
-    
+    await page.screenshot({path: `./datas/${file}`, fullPage: true});
     await browser.close();
-}
+})
+    
 
-browser();
+
