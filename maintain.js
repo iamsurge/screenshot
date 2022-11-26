@@ -12,7 +12,7 @@ sites.forEach(async (file) => {
     setTimeout(() => {
     await page.screenshot({path: `./datas/${file}`, fullPage: true});
     await browser.close();
-    }, 5000);
+    }, 15000);
     console.log(`Done ${url}`);
     }catch(e) {
     console.log(`Failed ${url}`);
