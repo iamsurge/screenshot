@@ -12,6 +12,7 @@ sites.forEach(async (file) => {
     await page.waitFor(15000);
     await page.screenshot({path: `./datas/${file}`, fullPage: true});
     await browser.close();
+    console.log(`Done ${url}`);
     }catch(e) {
     console.log(`Failed ${url}`);
     }
