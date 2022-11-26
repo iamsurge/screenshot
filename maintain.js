@@ -9,11 +9,11 @@ sites.forEach(async (file) => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(`${url}`, {waitUntil: 'networkidle0'});
-    setTimeout(() => {
+    setTimeout(async () => {
     await page.screenshot({path: `./datas/${file}`, fullPage: true});
     await browser.close();
-    }, 15000);
     console.log(`Done ${url}`);
+    }, 15000);
     }catch(e) {
     console.log(`Failed ${url}`);
     }
