@@ -24,7 +24,7 @@ jobs:
         yarn maintain
     - name: Commit files
       run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git commit -m "Wrote Music" -a || true
     - name: Create files
@@ -32,7 +32,7 @@ jobs:
       with:
        message: Show GitHub logo
        committer_name: GitHub Actions
-       committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+       committer_email: github-actions[bot]@users.noreply.github.com
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
