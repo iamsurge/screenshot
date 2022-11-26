@@ -1,11 +1,14 @@
 name: Run
-
+#  PUPPETEER_PRODUCT=firefox npm install
 on:
   push:
     branches: [ master ]
   schedule:
     - cron: "*/5 * * * *"
-
+    
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,22 +20,18 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
- 
+
     - name: Run
       run: |
+        yarn add puppeteer@18.2.1
         yarn
         yarn maintain
     - name: Commit files
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git commit -m "Wrote Music" -a || true
-    - name: Create files
-      uses: EndBug/add-and-commit@v9
-      with:
-       message: Show GitHub logo
-       committer_name: GitHub Actions
-       committer_email: github-actions[bot]@users.noreply.github.com
+        git commit -m "Took Screenshot" -a || true
+   
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
