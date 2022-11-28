@@ -17,6 +17,7 @@ sites.forEach(async (file) => {
     console.log(`Done ${url}`);
     }, 10000);
     }catch(e) {
+        console.log(e)
     console.log(`Failed ${url}`);
     }
 })
