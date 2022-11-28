@@ -10,7 +10,7 @@ sites.forEach(async (file) => {
     const page = await browser.newPage();
     await page.goto(`${url}`, {waitUntil: 'networkidle0'});
     const links = await page.$("a");
-    if(links) { await links.click(); }
+    if(links && url.includes("google.com")) { await links.click(); }
     setTimeout(async () => {
     await page.screenshot({path: `./datas/${file}`, fullPage: true});
     await browser.close();
