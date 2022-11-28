@@ -9,8 +9,7 @@ sites.forEach(async (file) => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(`${url}`, {waitUntil: 'networkidle0'});
-    const links = await page.$("a");
-    if(links && url.includes("google.com")) { await links.click(); }
+    if(url.includes("google.com")) { await page.click("div[class='yuRUbf']"); }
     setTimeout(async () => {
     await page.screenshot({path: `./datas/${file}`, fullPage: true});
     await browser.close();
