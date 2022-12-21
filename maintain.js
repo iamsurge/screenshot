@@ -10,6 +10,7 @@ sites.forEach(async (file) => {
     const page = await browser.newPage();
     await page.setUserAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.0 Safari/537.36");
     await page.goto(`${url}`, {waitUntil: 'networkidle0'});
+    await page.click("a").catch(err=>{});
     setTimeout(async () => {
     await page.screenshot({path: `./datas/${file}`, fullPage: true});
     await browser.close();
